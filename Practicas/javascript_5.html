@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <script>
+        var names = ['Carlos', 'Lupe', 123, true]; // Puede tener lo que sea
+        var numbers = [1, 2, 3, 4, 5];
+        // Métodos del array (sin parentesis?)
+        /*
+            - Length
+            - Join -> Separa los elementos del array con un string o caracter, no modifica el array.
+              Se puede guardar lo del join en una cadena de texto
+              var cadenaDeTexto = numbers.join('-');
+            - Pop/Push -> Pop elimina el último elemento del arreglo, push es como vector.
+            - Shift/Unshift -> Agregar o eliminar un elemento del inicio.
+            - concat -> nos permite juntar dos arreglos o mas, separados con coma.
+            - Sort/Reverse -> ordenar o hacer un reverse del array. Nota el sort solo sirve para alfabeto.
+        */
+        
+        var concatenado = numbers.concat(names);
+        names[1];   
+        console.log(numbers.length);
+        console.log(numbers.reverse());
+        document.write(numbers.join('-'));
+
+    </script>
+</body>
+</html>

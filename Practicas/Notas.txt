@@ -1,0 +1,6 @@
+En javascript hay unos dos operadores nuevos:
+=== igual en valor y tipo
+!== Diferente en valor y tipo
+
+El ciclo for es igual a cualquier for de otros lenguajes 
+tambien funciona el x in objeto; 
