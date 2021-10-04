@@ -4,3 +4,7 @@ En javascript hay unos dos operadores nuevos:
 
 El ciclo for es igual a cualquier for de otros lenguajes 
 tambien funciona el x in objeto; 
+
+El break y el continue jalan igual que cualquier lenguaje.
+
+Existe funciones autoinvocadas.
