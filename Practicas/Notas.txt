@@ -1,10 +1,47 @@
 En javascript hay unos dos operadores nuevos:
 === igual en valor y tipo
 !== Diferente en valor y tipo
-
+--------------------------------------------------------------------
 El ciclo for es igual a cualquier for de otros lenguajes 
 tambien funciona el x in objeto; 
-
+--------------------------------------------------------------------
 El break y el continue jalan igual que cualquier lenguaje.
+--------------------------------------------------------------------
+Existe funciones autoinvocadas. En general las funciones son similares a c++ solo que no tienen tipo, solo function.
 
-Existe funciones autoinvocadas.
+podemos guardar literalmente una función en una variable
+
+var suma = function(x, y){ // Hay que recordar que esta es una funcion anonima.
+    return x + y;
+}
+
+suma(5,6);
+
+También podemos hacer que la función se autoinvoque:
+(function(){
+    alert('Holaa'); 
+}())
+
+Esto nos permite proteger nuestro código de código de otras personas, por ejemplo es posible que ambos códigos
+tengan mismos nombres de variables, con esta forma podemos hacer que se compile nuestro código con preferencia
+--------------------------------------------------------------------
+En el scope de JS las variables pueden ser locales o globables.
+
+Dentro de una función una variable se vuelve local.
+
+Desde dentro de una función que esta dentro de una función podemos buscar variables hacia
+afuera.
+
+function x(){
+    var txt = 'hola';
+
+    function msg(){
+        var dentro = 5;
+        console.log(txt); // Si funciona -- Dentro hacia afuera 
+    }
+
+    console.log(dentro); // NO FUNCIONA --- Afuera hacia adentro
+}
+
+Para declarar una variable global eliminamos el prefijo var.
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Web</h1>
+    <div class="contenedor">
+        <form action="">
+            <input type="text" id="numero1">
+            <p>+</p>
+            <input type="text" id="numero2">
+            <p>=</p>
+            <input type="text" id="result" readonly>
+            <input type="button" value="Resultado" class="btn" onclick="suma()">
+        </form>
+    </div>
+    <div class="dado">
+        <button id="boton" class="boton" onclick="random()">Dado</button>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
