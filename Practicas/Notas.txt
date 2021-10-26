@@ -45,3 +45,10 @@ function x(){
 
 Para declarar una variable global eliminamos el prefijo var.
 
+Una variable local de una función, no puedo acceder desde afuera hacia ella.
+
+Para proteger variables de código de terceros podemos usar la función autoinvocada.
+--------------------------------------------------------------------
+A cada elemento del DOM se le conoce como Nodo los cuales se pueden obtener con JS y
+modificarlos.
+

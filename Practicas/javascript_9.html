@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background: #f2f2f2;
+            font-family: Arial;
+        }
+
+        .container{
+            width: 400px;
+            padding: 20px;
+        }
+
+        .caja{
+            padding: 20px 10px;
+            text-align: center;
+            margin: 10px 0;
+            /* background: #000; */
+            background: #226fc1;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .naranja{
+            background: #f9a03f;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="caja" id="caja1">1.- Lorem Ipsum</div>
+        <div class="caja">2.- Lorem Ipsum</div>
+        <div class="caja">3.- Lorem Ipsum</div>
+        <div class="caja">4.- Lorem Ipsum</div>
+    </section>
+    <script>
+        // Obtener las cajas del DOM
+        var cajas = document.getElementsByTagName('div');
+
+        // Cambiar el contenido de texto
+        cajas[0].textContent = 'Hola';
+        // Otra forma -- inyecta código
+        cajas[1].innerHTML = '<h1>Hola</h1>';
+
+        var cajas_2 = document.getElementsByClassName('caja');
+        var primeraCaja = document.getElementById('caja1');
+
+    </script>
+</body>
+</html>

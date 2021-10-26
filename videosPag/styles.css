@@ -76,13 +76,13 @@ img{
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 1000px;
 }
 
 .mosaico{
   border: 1px solid #5a5a5a;
-  width: 1000px;
-  height: 650px;
+  width: 900px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,37 +100,39 @@ img{
 
 .contenedor-mosaico p{
   color: #7a7a7a;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-family: Inter;
   font-weight: 200;
   font-size: 150%;
 }
 
 .contenedor-mosaico-imgs{
+  width: 650px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.img-big{
-  width: 400px;
-  height: 400px;
-  margin-right: 20px;
-  background-size: cover;
-  background-image: url("images/Conferecne.jpg");
+.video-img{
+  width: 300px;
+  height: 300px;
 }
 
-.img-small{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.video-img.primero{
+  z-index: 1;
+  background-color: coral;
 }
 
-.img-1, .img-2{
-  width: 190px;
-  height: 190px;
-  background-size: cover;
-  background-image: url("images/Conferecne.jpg");
+.video-img.segundo{
+  background-color: cornflowerblue;
+  z-index: 0;
+}
+
+.video1-container{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: chocolate;
 }
 
 footer{
